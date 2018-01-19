@@ -27,19 +27,18 @@ client.on('message', msg => {
   
   
   
-  if (msg.content === 'l!hakkımda') {
-    msg.channel.sendMessage("`Lokum Bot | V1.0 By NihatJS`");
-		msg.channel.send("`"+Math.floor(client.ping)+"ms`")
-  }
+  	if (msg.content === 'l!hakkımda') {
+    		msg.channel.sendMessage("`Lokum Bot | V1.0 By NihatJS`");
+    		msg.channel.send("`"+Math.floor(client.ping)+"ms`")
+ 	 }
   
   
 	if (msg.content === 'l!rastgelehex') {
-      let color = ((1 << 24) * Math.random() | 0).toString(16); //Rastgele hex kodu üretir.
-      let embed = new Discord.RichEmbed() //Embedi oluşturur.
-            .setTitle(`#${color}`)
-            .setColor(`#${color}`);
-     msg.channel.send({embed: embed});
-	 console.log(msg.channel.name + " adlı kanalda Komut kullanıldı: l!rastgelehex")
+      		let color = ((1 << 24) * Math.random() | 0).toString(16); //Rastgele hex kodu üretir.
+      		let embed = new Discord.RichEmbed() //Embedi oluşturur.
+            		.setTitle(`#${color}`)
+            		.setColor(`#${color}`);
+     	msg.channel.send({embed: embed});
 	}
   
   
