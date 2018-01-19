@@ -1,3 +1,4 @@
 # Lokum
 Basic discord bot
-deneme
+
+Davet linki yakında...
