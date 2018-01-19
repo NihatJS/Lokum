@@ -1,0 +1,14 @@
+{
+  "name": "Lokum",
+  "version": "1.0.0",
+  "description": "Lokum bot test",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && node index.js"
+  },
+  "author": "NihatJS",
+  "license": "none",
+  "dependencies": {
+    "discord.js": "^11.3.0"
+  }
+}
