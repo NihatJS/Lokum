@@ -6,6 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
+	
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+
   
 	// Yardım
 	if (msg.content === 'l!yardım') {
