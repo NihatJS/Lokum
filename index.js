@@ -15,7 +15,7 @@ client.on('message', msg => {
 	if (msg.content === 'l!yardım') {
 		const embed = new Discord.RichEmbed()
 		.setColor(0x22e172)
-		.setTitle("Komut listesi:")
+		.setTitle("Lokum Komut listesi:")
 		.addField("l!yardım", "Komut listesini gösterir")
 		.addField("l!hakkında", "Botun bilgilerini gösterir")
 		.addField("l!rastgelehex", "Rastgele hex kodu üretir ve size gösterir")
