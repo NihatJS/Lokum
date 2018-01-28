@@ -74,9 +74,9 @@ client.on('message', msg => {
   
 	if (msg.content.startsWith("l!sohbetsil")) {
 	  if (!msg.member.hasPermissions('MANAGE_MESSAGES')) return msg.reply('Yetkin yok! Gerekli yetki: `MANAGE_MESSAGES`')
-	   if (!args[0]) return msg.reply('Bomboş sohbet sil mi olur! Aynı lokum yapmak ve içine fındık fıstık koymamak gibi! Doldur şunu!')
-	   if (args<3) return msg.reply('3 Den aşağı mesaj silemezsin!')
-		if (args>100) return msg.reply('100 Den yukarı mesaj silemezsin!')
+	   if (!args) return msg.reply('Bomboş sohbet sil mi olur! Aynı lokum yapmak ve içine fındık fıstık koymamak gibi! Doldur şunu!')
+	   if (args[0]<3) return msg.reply('3 Den aşağı mesaj silemezsin!')
+		if (args[0]>100) return msg.reply('100 Den yukarı mesaj silemezsin!')
 		msg.channel.fetchMessages()
         	msg.channel.bulkDelete(args)
 		console.log(msg.channel.name + " adlı kanalda Komut kullanıldı: l!sohbetsil [sayı]")
