@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 	
-  var args = msg.content.split(" ").slice(1);
+  let args = message.content.split(" ").join(" ").slice(1);
 
 
   
